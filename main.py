@@ -5,6 +5,7 @@ import uvicorn
 from apps.calculator.routes import router as calculator_router
 from constants import SERVER_URL, PORT, ENV
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     yield
